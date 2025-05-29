@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Foundational Webpage</title>
+  <style>
+    /* CSS Styling */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f4f8;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #4a90e21;
+      color: white;
+      padding: 20px 30px;
+      text-align: center;
+      border-radius: 8px;
+      box-shadow: 0 3px 6px rgba(74,144,226,0.4);
+    }
+    header h1 {
+      margin: 0;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    main {
+      background: white;
+      max-width: 700px;
+      margin: 30px auto;
+      padding: 25px 30px;
+      border-radius: 8px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+    }
+    main h2 {
+      color: #4a90e2;
+      margin-top: 0;
+    }
+    main p {
+      margin-bottom: 15px;
+      font-size: 1.1rem;
+    }
+    img {
+      max-width: 100%;
+      display: block;
+      margin: 15px auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    }
+    a {
+      color: #4a90e2;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    a:hover, a:focus {
+      text-decoration: underline;
+    }
+    button {
+      background-color: #4a90e2;
+      border: none;
+      color: white;
+      padding: 12px 25px;
+      font-size: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      display: block;
+      margin: 25px auto 0;
+      box-shadow: 0 3px 6px rgba(74,144,226,0.5);
+    }
+    button:hover {
+      background-color: #357ABD;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Foundational Webpage</h1>
+  </header>
+  <main>
+    <h2>About This Page</h2>
+    <p>This is a simple webpage to demonstrate foundational concepts in HTML, CSS, and JavaScript.</p>
+    <p>It contains headings, paragraphs, an image, links, styled with CSS, and a button that triggers an alert.</p>
+
+    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=700&q=80" alt="Scenic Landscape" />
+
+    <p>Learn more about web development at <a href="https://developer.mozilla.org/en-US/docs/Learn" target="_blank" rel="noopener noreferrer">MDN Web Docs</a>.</p>
+
+    <button id="alertButton">Click Me!</button>
+  </main>
+
+  <script>
+    // JavaScript for interactivity
+    const alertButton = document.getElementById('alertButton');
+    alertButton.addEventListener('click', () => {
+      alert('Hello! This alert demonstrates basic JavaScript interactivity.');
+    });
+  </script>
+</body>
+</html>
